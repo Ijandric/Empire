@@ -5,10 +5,10 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgb(177, 216, 203);
     background-image: url("background.jpg");
     background-size: cover;
     background-position: center center;
+    background-repeat: no-repeat;
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
@@ -96,6 +96,7 @@ h3{
     color: white;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
 }
 
 .popup.active{
