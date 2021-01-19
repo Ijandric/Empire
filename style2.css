@@ -88,8 +88,8 @@ h3{
 .popup{
     position: absolute;
     bottom: -500px;
-    transition: all 0.2s ease-in-out;
-    height: 500px;
+    transition: all 0.3s ease-in-out;
+    height: 0;
     background-color: rgba(53, 80, 80, 0.9);
     width: 100%;
     padding: 15px;
@@ -100,6 +100,7 @@ h3{
 
 .popup.active{
     bottom: 0;
+    height: 500px;
 }
 
 .info.active{
