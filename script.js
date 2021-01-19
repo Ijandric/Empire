@@ -10,3 +10,12 @@ buttons.forEach(e => {
         }
     });
 });
+
+let info = document.querySelector(".info");
+let popup = document.querySelector(".popup");
+
+info.addEventListener('click', () => {
+    popup.classList.toggle("active");
+    info.classList.toggle("active");
+    info.innerText = info.innerText === '?' ? 'X' : '?'
+})

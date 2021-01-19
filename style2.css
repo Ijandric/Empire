@@ -1,5 +1,6 @@
 *{
     font-family: 'Salsa', cursive;
+    box-sizing: border-box;
 }
 body{
     margin: 0;
@@ -53,7 +54,7 @@ h3{
     font-size: 30px;
     font-weight: bold;
     cursor:pointer;
-    border: 1px solid rgb(83, 83, 83);;
+    border: 1px solid rgb(83, 83, 83);
     border-radius: 50%;
     margin-right: 15px;
     color: white;
@@ -65,4 +66,49 @@ h3{
 
 .plus{
     background-color: rgba(14, 132, 14, 0.8);
+}
+
+.info{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    height: 50px;
+    width: 50px;
+    background-color: rgba(53, 80, 80, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    border: 1px solid rgb(83, 83, 83);
+    transition: all 0.2s ease-in-out;
+}
+
+.popup{
+    position: absolute;
+    bottom: -500px;
+    transition: all 0.2s ease-in-out;
+    height: 500px;
+    background-color: rgba(53, 80, 80, 0.9);
+    width: 100%;
+    padding: 15px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.popup.active{
+    bottom: 0;
+}
+
+.info.active{
+    transform: rotate(360deg);
+}
+
+.row{
+    margin: 10px 0;
+}
+
+.right {
+    text-align: right;    
 }
